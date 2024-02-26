@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3
+    </title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">Do you consent sharing your personal infromation with the site?</button>
+    <p id="confirmoutput"></p>
+    <a href="index.html">Question One</a>
+    
+    <script>
+        
+        var nme = prompt("Please enter your name: ");
+        var height = prompt("Please enter your height (in): ");
+            var height1;
+            var height2;
+            var weight = prompt("Please enter your weight(kg): ", "");
+            var weight1;
+            var decimal;
+
+        
+        decimal = height%12;
+        height1 = ((height/12));
+        height3 = height1%1;
+        height=height1-height3;
+        weight = weight * 2.20462262;
+        weight1 = weight * 100;
+        weight1 = (weight1%1)/100;
+        weight = weight - weight1;
+
+    
+    function myFunction(){
+    if(confirm("Do you consent sharing your personal information with the site?")){
+        alert("Name: "+nme +"\nHeight: "+ height + "'" + decimal + "\"" +"\nWeight: "+ weight + "lbs");
+    } else{
+        alert("User does not  wish to share his/her information.");}
+    }
+    
+    </script>
+</body>
+</html>
